@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+a img {
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
+body {
+  background: url("./img/bg_cute.png");
+  background-size: contain;
+  background-repeat: round;
+  background-blend-mode: color-burn;
+  background-color: rebeccapurple;
+}
+
+#root {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 15px dotted gold;
+}
+
+.sheet {
+  width: 50%;
+  height: 600px;
+  margin: 20px 0 20px 20px;
+  background-color: transparent;
+}
+
+.sheet form {
+  width: 100%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+  background-color: purple;
+  color: azure;
+}
+
+.sheet form label {
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+
+.sheet form input#name {
+  width: 200px;
+  padding: 10px;
+  background-color: azure;
+}
+
+.sheet form select {
+  width: 150px;
+  height: 40px;
+  font-size: 1em;
+  color: purple;
+  background-color: azure;
+}
+
+.sheet form #selectDIV {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.sheet form #selectDIV #racesDIV {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.sheet form #selectDIV #classDIV {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.sheet form #checkboxDIV {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+}
+
+.sheet form #checkboxDIV #genderDIV {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.sheet form #checkboxDIV #pronounDIV {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.sheet form #gender label {
+  text-transform: none;
+  letter-spacing: 0;
+  padding-left: 10px;
+}
+
+.sheet form #pronoun label {
+  text-transform: none;
+  letter-spacing: 0;
+  padding-left: 10px;
+}
+
+.character_sheet {
+  width: 50%;
+  height: 600px;
+  margin: 20px 20px 20px 0;
+  background-color: azure;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  font-family: Poppins, sans-serif;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.character_sheet #raceIconDIV {
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.character_sheet #raceIconDIV img {
+  width: 50%;
+}
+
+.character_sheet #classIconDIV {
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.character_sheet #classIconDIV img {
+  width: 50%;
+}
+
+.character_sheet button {
+  background-color: purple;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: azure;
+  font-size: 1.2em;
+}
+
+.character_sheet button:hover {
+  background-color: rgba(128, 0, 128, 0.842);
+}
+/*# sourceMappingURL=style.css.map */
