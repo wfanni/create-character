@@ -1,200 +1,214 @@
 * {
-    margin:0; 
-    padding:0; 
-    border:0; 
-    background:transparent; 
-    outline:none; 
-    text-decoration:none; 
-    font-family:inherit; 
-    box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  font-family: inherit;
+  box-sizing: border-box;
 }
-ol, ul, li {
-    list-style:none; 
-    display:block;
-}   
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
 table {
-    border-collapse: collapse;
-    border-spacing:0;
-}    
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 button,
 a {
-    cursor: pointer; color: inherit;
+  cursor: pointer;
+  color: inherit;
 }
 a img {
-    border: none;
-}    
+  border: none;
+}
 textarea {
-    resize: none;
-}   
-  
+  resize: none;
+}
+
 body {
-    background: url("./img/bg_cute.png");
-    background-size: contain;
-    background-repeat: round;
-    background-blend-mode: color-burn;
-    background-color: rebeccapurple;
+  position: relative;
+  background: url("./img/bg_cute.png");
+  background-size: contain;
+  background-repeat: round;
+  background-blend-mode: color-burn;
+  background-color: rebeccapurple;
 }
 
 #root {
-    width: 60%;
-    margin: auto;
-    margin-top: 50px;
+  position: relative;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    border: 15px dotted gold;
+  border: 15px dotted gold;
+
+  .attribution {
+    position: absolute;
+    top: -8vh;
+    background-color: rgba(240, 248, 255, 0.795);
+    font-family: sans-serif;
+    padding: 1vh;
+    a {
+      color: rebeccapurple;
+      font-weight: bold;
+
+      &:hover {
+        color: rgb(130, 75, 185);
+      }
+    }
+  }
 }
 
 .sheet {
-    width: 50%;
-    height: 600px;
-    margin: 20px 0 20px 20px;
-    background-color: transparent;
-    form {
-        width: 100%;
-        height: inherit;
-
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-
-        font-family: Poppins, sans-serif;
-        text-transform: uppercase;
-        background-color: purple;
-        color: azure;
-        label {
-            font-size: 1em;
-            letter-spacing: 0.1em;
-        }
-        input#name {
-            width: 200px;
-            padding: 10px;
-            background-color: azure;
-        }
-        select {
-            width: 150px;
-            height: 40px;
-            font-size: 1em;
-            color: purple;
-            background-color: azure;
-            
-        }
-        #selectDIV {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
-            #racesDIV {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-            }
-            #classDIV {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-            }
-        }
-        #checkboxDIV {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 30px;
-            #genderDIV {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 20px;
-            }
-            #pronounDIV {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 20px;
-            }
-        }
-        #gender {
-            label {
-                text-transform: none;
-                letter-spacing: 0;
-                padding-left: 10px;
-            }
-            
-        }
-        #pronoun {
-            label {
-                text-transform: none;
-                letter-spacing: 0;
-                padding-left: 10px;
-
-            }
-        }
-    }
-    
-
-}
-
-.character_sheet {
-    width: 50%;
-    height: 600px;
-    margin: 20px 20px 20px 0;
-    background-color: azure;
+  width: 50%;
+  height: 600px;
+  margin: 20px 0 20px 20px;
+  background-color: transparent;
+  form {
+    width: 100%;
+    height: inherit;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: stretch;
+    gap: 50px;
+
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 
     font-family: Poppins, sans-serif;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    #raceIconDIV {
-        width: 100%;
-        height: 40%;
-        // margin: 20px;
-
+    text-transform: uppercase;
+    background-color: purple;
+    color: azure;
+    label {
+      font-size: 1em;
+      letter-spacing: 0.1em;
+    }
+    input#name {
+      width: 200px;
+      padding: 10px;
+      background-color: azure;
+    }
+    select {
+      width: 150px;
+      height: 40px;
+      font-size: 1em;
+      color: purple;
+      background-color: azure;
+    }
+    #selectDIV {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      #racesDIV {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        img {
-            width: 50%;
-        }
-        
-    }
-    #classIconDIV {
-        width: 100%;
-        height: 40%;
-        // margin: 20px;
-
+        gap: 10px;
+      }
+      #classDIV {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        img {
-            width: 50%;
-        }
+        gap: 10px;
+      }
     }
-    button {
-        background-color: purple;
-        padding: 20px;
-        margin-bottom: 20px;
-        color: azure;
-        font-size: 1.2em;
-        &:hover {
-            background-color: rgba(128, 0, 128, 0.842);
-        }
+    #checkboxDIV {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      #genderDIV {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      #pronounDIV {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
     }
+    #gender {
+      label {
+        text-transform: none;
+        letter-spacing: 0;
+        padding-left: 10px;
+      }
+    }
+    #pronoun {
+      label {
+        text-transform: none;
+        letter-spacing: 0;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.character_sheet {
+  width: 50%;
+  height: 600px;
+  margin: 20px 20px 20px 0;
+  background-color: azure;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+
+  font-family: Poppins, sans-serif;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  #raceIconDIV {
+    width: 100%;
+    height: 40%;
+    // margin: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 50%;
+    }
+  }
+  #classIconDIV {
+    width: 100%;
+    height: 40%;
+    // margin: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 50%;
+    }
+  }
+  button {
+    background-color: purple;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: azure;
+    font-size: 1.2em;
+    &:hover {
+      background-color: rgba(128, 0, 128, 0.842);
+    }
+  }
 }

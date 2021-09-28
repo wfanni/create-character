@@ -10,7 +10,9 @@
           box-sizing: border-box;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
   list-style: none;
   display: block;
 }
@@ -35,6 +37,7 @@ textarea {
 }
 
 body {
+  position: relative;
   background: url("./img/bg_cute.png");
   background-size: contain;
   background-repeat: round;
@@ -43,6 +46,7 @@ body {
 }
 
 #root {
+  position: relative;
   width: 60%;
   margin: auto;
   margin-top: 50px;
@@ -56,6 +60,23 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 15px dotted gold;
+}
+
+#root .attribution {
+  position: absolute;
+  top: -8vh;
+  background-color: rgba(240, 248, 255, 0.795);
+  font-family: sans-serif;
+  padding: 1vh;
+}
+
+#root .attribution a {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+#root .attribution a:hover {
+  color: #824bb9;
 }
 
 .sheet {
